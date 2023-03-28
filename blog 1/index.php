@@ -60,22 +60,20 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "Title of the blog: " . $row["title"]."<br>";
-    echo "paragraph: " . $row["paragraph"]."<br> <br> <br> <br>";
+    echo "<b> Title of the blog: " . $row["title"]."</b> <br>";
+    echo "paragraph: " . $row["paragraph"]."<br> <br>";
+    echo "Comment: <br> <textarea > </textarea>"."<br> <br> <br>  <br> <br> ";
   }
+  
 } else {
   echo "0 results";
 }
 $conn->close();
 ?>
 
+
+
 </div>
-
-
-
-
-
-    
 
     <!--JS links -->
     
